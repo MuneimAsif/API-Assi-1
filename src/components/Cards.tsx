@@ -12,7 +12,8 @@ export default function ShowDataCard(props: propsType) {
                             <ul className="list-group list-group-flush">
                                 <img src={x.image} alt="" className="mx-auto" width={"90px"} height={"90px"} />
                                 <li className="list-group-item text-danger fs-5 fw-bold" >{x.title}</li>
-                                <li className="list-group-item text-danger" >{x.id}</li>                        <li className="list-group-item text-danger" >   {x.category}</li>
+                                <li className="list-group-item text-danger">{x.id}</li>
+                                <li className="list-group-item text-danger">{x.category}</li>
                             </ul>
                             <button className="btn btn-info w-100" onClick={() => view(x.price)}>View...</button>
                         </div>
